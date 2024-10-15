@@ -1,0 +1,21 @@
+def person(name, *data):
+    print(name)
+    print(data)
+person('ravi',age=28,city='mumbai',mob=899868565)
+
+o/p:
+Traceback (most recent call last):
+  File "C:\Users\Shiva\PycharmProjects\pythonProject\modules\prac.py", line 5, in <module>
+    person('ravi',age=28,city='mumbai',mob=899868565)
+TypeError: person() got an unexpected keyword argument 'age'
+----------------------------
+
+def person(name, **data):
+    print(name)
+    print(data)
+person('ravi',age=28,city='mumbai',mob=899868565)
+
+o/p:
+ravi
+{'age': 28, 'city': 'mumbai', 'mob': 899868565}
+----------------------------

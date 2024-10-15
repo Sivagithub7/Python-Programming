@@ -1,0 +1,32 @@
+Break:
+
+lst=[1,3,5,7,9]
+for i in lst:
+    if(i==5):
+        break
+    print(i)
+
+o/p:
+1
+3
+-----------------------
+Continue:
+x=0
+while x<10:
+    x+=1
+    if x%3==0:
+        continue
+    print(x)
+
+o/p:
+
+
+1
+2
+4
+5
+7
+8
+10
+
+note : except 3 divisible

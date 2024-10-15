@@ -1,0 +1,119 @@
+Fibonacci == 0 1 1 2 3 5 8... adding before 2 nums.
+
+def fib(n):
+    a=0
+    b=1
+    if n == 1:
+        print(a)
+
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            print(c)
+
+fib(1)
+
+o/p:
+0
+
+or
+
+def fib(n):
+    a=0
+    b=1
+    if n == 1:
+        print(a)
+
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            print(c)
+
+fib(10)
+
+o/p:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+=============================
+def fib(n):
+    a=0
+    b=1
+    if n<1:
+        print("invalid input")
+    elif n==1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            if c >100:
+                break
+            else:
+                print(c)
+
+n = int(input("Please enter the no. of value you want in your fibonacci series"))
+fib(n)
+
+o/p:
+
+Please enter the no. of value you want in your fibonacci series0
+invalid input
+
+or 
+
+def fib(n):
+    a=0
+    b=1
+    if n<1:
+        print("invalid input")
+    elif n==1:
+        print(a)
+    else:
+        print(a)
+        print(b)
+        for i in range(2,n):
+            c=a+b
+            a=b
+            b=c
+            if c >100:
+                break
+            else:
+                print(c)
+
+n = int(input("Please enter the no. of value you want in your fibonacci series"))
+fib(n)
+
+o/p:
+
+Please enter the no. of value you want in your fibonacci series101
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+89

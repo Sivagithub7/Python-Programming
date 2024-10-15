@@ -1,0 +1,19 @@
+r=float(input("Enter radius number: "))
+pi=3.14
+area=pi*r**2
+print(area)
+
+o/p:
+
+Enter radius number: 5
+78.5
+--------------------------
+import math
+r=float(input("Enter radius number: "))
+area=math.pi*r**2
+print(area)
+
+o/p:
+
+Enter radius number: 5
+78.53981633974483

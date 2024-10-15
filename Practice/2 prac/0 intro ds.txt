@@ -1,0 +1,36 @@
+there are five types:
+
+none type -- an obj does not contain any value
+numeric types -- int,float,ex
+sequences -- str,bytes,bytearray,list,tuple,range
+sets
+mappings
+-------------------
+complex:
+a=3+2j
+print(type(a))
+-------------
+Binary:
+b=0B1010
+print(b)
+
+o/p:
+10
+--------------
+Hexa decimal:
+
+c=0XFF
+print(c)
+
+o/p:
+255
+------------
+Boolean:
+
+a=True
+print(type(a))
+print(9>8)
+
+<class 'bool'>
+True
+----------------

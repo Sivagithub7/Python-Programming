@@ -1,0 +1,100 @@
+User input:The input() function receives the user input from the keyboard and stores it into a variable name.
+
+x=input()
+print(x)
+
+o/p:
+yes
+yes
+
+ex:
+
+x=input("enter something:" )
+print(x)
+
+o/p:
+enter something:hai
+hai
+
+ex:
+x=input("enter num1: " )
+y=input("enter num2: " )
+z=x+y
+print("result is:", z )
+
+o/p:
+
+enter num1: 5
+enter num2: 6
+result is: 56
+
+ex:
+
+x=input("enter num1: " )
+y=input("enter num2: " )
+a=int(x)
+b=int(y)
+z=a+b
+print("result is:", z )
+
+o/p:
+enter num1: 5
+enter num2: 6
+result is: 11
+
+or
+
+ex:
+x=int(input("enter num1: " ))
+y=int(input("enter num2: " ))
+z=x+y
+print("result is:", z )
+
+o/p:
+enter num1: 5
+enter num2: 4
+result is: 9
+
+ex:
+
+x=input("enter any char:", )
+print(x[0])
+
+o/p:
+enter any char:hari
+h
+
+ex:
+x=input("enter any char:", )
+print(x[2])
+
+o/p:
+enter any char:eswar
+w
+
+ex:find length
+
+x=input("enter any char:", )
+count=len(x)
+print(count)
+
+o/p:
+enter any char:telugu
+6
+
+ex:want to enter only one char
+x=input("enter any of char:", )
+while len(x) != 1:
+    print("please enter only one char")
+    x=input("enter any char:")
+    print(x)
+	
+o/p:
+enter any of char:gdu
+please enter only one char
+enter any char:iu
+iu
+please enter only one char
+enter any char:i
+i
+

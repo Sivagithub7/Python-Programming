@@ -1,0 +1,52 @@
+swap of  num using third variable:
+
+a=12
+b=10
+temp=a
+a=b
+b=temp
+print("a is : ",a)
+print("b is : ",b)
+
+o/p:
+a is :  10
+b is :  12
+========================
+without using 3rd variable:
+
+a=12
+b=10
+a=a+b
+b=a-b
+a=a-b
+print("a is : ",a)
+print("b is : ",b)
+
+o/p:
+a is :  10
+b is :  12
+=========
+using xor:
+
+a=12
+b=10
+a=a^b
+b=a^b
+a=a^b
+print("a is : ",a)
+print("b is : ",b)
+
+o/p:
+a is :  10
+b is :  12
+=======================
+a=12
+b=10
+a,b=b,a
+print("a is : ",a)
+print("b is : ",b)
+
+o/p:
+a is :  10
+b is :  12
+===================

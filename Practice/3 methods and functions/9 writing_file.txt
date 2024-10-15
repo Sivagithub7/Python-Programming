@@ -1,0 +1,32 @@
+Before file:
+from calculator import *
+
+a=15
+b=20
+
+c=multi(a,b)
+print('result : ',c)
+
+----------------------------
+results_file=open("main.sh.py", "a")
+results_file.write("coding")
+results_file.close()
+
+o/p:
+from calculator import *
+
+a=15
+b=20
+
+c=multi(a,b)
+print('result : ',c)coding
+
+----------------------
+results_file=open("prac.py", "w")
+results_file.write("coding")
+results_file.close()
+
+o/p:
+
+prac.py file created and data inserted "coding" automatically,
+--------------------

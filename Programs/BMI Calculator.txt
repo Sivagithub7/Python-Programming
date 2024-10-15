@@ -1,0 +1,14 @@
+height=float(input("Enter your Height :" ))
+weight=float(input("Enter your Weight :" ))
+
+heightInMeters=height*0.4536
+bmi=weight/(heightInMeters*heightInMeters)
+
+print(bmi)
+
+o/p:
+
+Enter your Height :5.11
+Enter your Weight :80
+14.890253618823573
+------------------------------------------------

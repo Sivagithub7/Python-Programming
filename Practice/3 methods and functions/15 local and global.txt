@@ -1,0 +1,68 @@
+a=10  --- gobal var
+def something():
+    a=15   -- local var
+    print("in fun ",a)
+something()
+
+print("out fun ",a)
+
+o/p
+
+in fun  15     ---- so first preference is for local var always.
+out fun  10
+------------------------
+a=10
+def something():
+    global a  -- here we defining hey this is globar var
+    a=15
+    print("in fun ",a)
+something()
+
+print("out fun ",a)
+
+o/p:
+in fun  15
+out fun  15
+---------------------------------
+
+a=10
+print(id(a))
+def something():
+
+    a=9
+    x=globals()['a']  -- we are referring global here
+    print(id(x))
+    print("in fun ",a)
+
+    globals()['a']=15  -- change the global var with out effecting local var
+something()
+
+print("out fun ",a)
+
+o/p:
+
+140706406832064
+140706406832064
+in fun  9
+out fun  15
+-------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

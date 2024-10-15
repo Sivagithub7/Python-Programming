@@ -1,0 +1,167 @@
+
+Function:
+--A function is a block of code which only runs when it is called.
+
+--You can pass data, known as parameters, into a function.
+
+--A function can return data as a result.
+
+ex:
+
+print("hai")
+print("bye")
+
+print("again1 hai bye")
+print("hai")
+print("bye")
+
+print("again2 hai bye")
+print("hai")
+print("bye")
+
+print("again3 hai bye")
+print("hai")
+print("bye")
+
+o/p:
+hai
+bye
+again1 hai bye
+hai
+bye
+again2 hai bye
+hai
+bye
+again3 hai bye
+hai
+bye
+
+ex: but we dont write that much of lines so we using this function 
+
+def sayHello():
+    print("hai")
+    print("bye")
+
+sayHello()
+print("some block of code")
+sayHello()
+print("new block of code")
+sayHello()
+
+o/p:
+hai
+bye
+some block of code
+hai
+bye
+new block of code
+hai
+bye
+
+ex:
+
+def sayHello(name):
+    print("hai",name)
+    print("Good morning")
+
+sayHello('rambabu')
+print('some block of code')
+sayHello('vickey')
+
+o/p:
+hai rambabu
+Good morning
+some block of code
+hai vickey
+Good morning
+
+ex: default user
+def sayHello(name='user'):
+    print("hai",name)
+    print("Good morning")
+
+sayHello('rambabu')
+print('some block of code')
+sayHello('vickey')
+sayHello()
+
+o/p:
+hai rambabu
+Good morning
+some block of code
+hai vickey
+Good morning
+hai user
+Good morning
+
+ex:
+
+def sayHello(name):
+    print("hai",name)
+    print("Good morning")
+
+def add(fn,sn):
+    result = fn + sn
+    print('result:' , + str(result))
+
+sayHello('rambabu')
+
+add(2,5)
+
+o/p:
+
+hai rambabu
+Good morning
+result: 7
+
+ex: we dont know how many arguments user wants in that case we use
+
+def sayHello(name):
+    print("hai",name)
+    print("Good morning")
+
+def add(fn,sn):
+    result = fn + sn
+    print('result:' , + str(result))
+
+def getSum(*x):
+    result=0
+    for a in x:
+        result+=a
+    print("result: ",result)
+
+sayHello('rambabu')
+
+o/p:
+hai rambabu
+Good morning
+result:  80
+
+ex:
+def sayHello(name,age,country='india'):
+    print("hello ",name)
+    print("age:",age)
+    print("country is ",country)
+sayHello('ram',33)
+sayHello('emialy',23,"uk")
+
+o/p:
+country is  india
+hello  emialy
+age: 23
+country is  uk
+
+ex:
+def add(*nums):
+    result=0
+    val=99
+    for x in nums:
+        result +=x
+    return result,val
+
+numSum,z=add(20,244,8,22)
+print(numSum,z)
+
+o/p:
+294 99
+

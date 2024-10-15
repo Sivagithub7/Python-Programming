@@ -1,0 +1,27 @@
+results_file=open("calculator.py", "r")
+print(results_file.readable())
+results_file.close()
+
+o/p:
+True
+-----------------------
+results_file=open("main.sh.py", "r")
+print(results_file.read())
+results_file.close()
+
+o/p:
+from calculator import *
+
+a=15
+b=20
+
+c=multi(a,b)
+print('result : ',c)
+--------------------
+results_file=open("main.sh.py", "r")
+print(results_file.readline()) -----------------read line by line
+results_file.close()
+
+o/p:
+from calculator import *
+--------------------------

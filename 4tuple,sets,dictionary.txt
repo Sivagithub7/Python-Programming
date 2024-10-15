@@ -1,0 +1,142 @@
+Tuple: Tuples in Python are similar to Python lists but not entirely. Tuples are immutable and ordered and allow duplicate values.
+
+fruits1=('apple','orange', 'berry', 'banana', 'apple')
+fruits1.count('apple')
+2
+
+fruits1.index('berry')
+2
+
+--------------------
+name=('raj','kasi','vikram','sai')
+name
+('raj', 'kasi', 'vikram', 'sai')
+
+-- i want to change or replace name
+
+name[1]='tim'
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    name[1]='tim'
+TypeError: 'tuple' object does not support item assignment
+
+here we convert into listthen only we able to change it 
+
+nameList=list(name)
+nameList
+['raj', 'kasi', 'vikram', 'sai']
+nameList[1]='tim'
+nameList
+['raj', 'tim', 'vikram', 'sai']
+name=nameList
+name
+['raj', 'tim', 'vikram', 'sai']
+
+but above one is in list state[]
+so
+name=tuple(nameList)
+name
+('raj', 'tim', 'vikram', 'sai')
+
+---------------------------------------
+want to add names in last
+
+names=('raj', 'kasi', 'vikram', 'sai')
+names.append('vaishnavi')
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    names.append('vaishnavi')
+AttributeError: 'tuple' object has no attribute 'append'
+
+nameList=list(names)
+names.append('vaishnavi')
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    names.append('vaishnavi')
+AttributeError: 'tuple' object has no attribute 'append'
+
+nameList.append('vaishnavi')
+names=tuple(nameList)
+names
+('raj', 'kasi', 'vikram', 'sai', 'vaishnavi')
+
+==============================================
+Sets: A Set in Python programming is an unordered collection data type that is iterable, mutable and has no duplicate elements. 
+
+--unordered
+--unchangable
+--unindexed
+--it will be changes frequently values places
+like--1)raj,sam 
+    after- sam,raj
+	
+ex:
+myset={'rafi',99,'raj','sam'}
+myset
+{99, 'raj', 'sam', 'rafi'}
+
+print(len(myset))
+4
+==========================================================
+Dictionaries: 
+
+person={'firstname':'rafi','lastname':'mohammud','mobile':0000000}
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 0}
+
+person.update({'mobile':9999})
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999}
+
+want to add item:
+person['age']=35
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999, 'age': 35}
+
+person['man']='yes'
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999, 'age': 35, 'man': 'yes'}
+
+want to delete any item
+person.pop('man')
+'yes'
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999, 'age': 35}
+
+want to delete last item
+person.popitem()
+('age', 35)
+
+want to delete 
+del person['lastname']
+person
+{'firstname': 'rafi', 'mobile': 9999}
+
+complete delete
+del person
+person
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    person
+NameError: name 'person' is not defined
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999}
+
+or
+
+person.clear()
+
+want to see keys and values seperately
+person={'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999}
+person
+{'firstname': 'rafi', 'lastname': 'mohammud', 'mobile': 9999}
+person.keys()
+dict_keys(['firstname', 'lastname', 'mobile'])
+person.values()
+dict_values(['rafi', 'mohammud', 9999])
+
+if we dont know mobile is there are not so we can check like this
+if 'mobile' in person: print('yes')
+
+yes
+

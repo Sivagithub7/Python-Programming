@@ -1,0 +1,37 @@
+Escape chars:
+
+print(" i am a \tgood boy")
+print(" i am a \ngood boy")
+print(" i am a 'good boy'")
+
+o/p:
+
+ i am a 	good boy
+ i am a 
+good boy
+ i am a 'good boy'
+
+-------------
+print(" i am a "good boy"")
+print(" i am a \"good boy\"")
+
+o/p:
+
+    print(" i am a "good boy"")
+                    ^
+SyntaxError: invalid syntax
+-----------------------------
+print(" i am a \"good boy\"")
+
+o/p:
+ i am a "good boy"
+
+----------------
+print(" i am a \\good boy\\")
+
+o/P:
+
+ i am a \good boy\
+===============================================
+constarints: does not change value in this and should be upper  case naming
+==================================

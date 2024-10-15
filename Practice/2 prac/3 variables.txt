@@ -1,0 +1,292 @@
+>>variables: It is a container stores the data and variables names
+
+>we can store data in any variable using equals(=)
+>name starts with letter, underscore.
+a-z
+A-Z
+
+ex:
+
+a_c --correct
+ac_ --correct
+5ac --wrong
+_ac --correct 
+
+> name=jack
+print(name)
+
+name=smith
+print(name)
+
+name=input(What is your name)
+length=len(name)
+print(length)
+
+i/p: sam
+o/p:
+jack
+smith
+3
+
+name='nikil'
+name
+'nikil'
+name[0]
+'n'
+name[-3]
+'k'
+len(name)
+5
+
+ex:
+
+x=9
+print(x)
+9
+y=5
+x+y
+14
+x/y
+1.8
+z=x/y
+x
+9
+z
+1.8
+x // y
+1
+
+ex-
+
+x=10
+y='roll no:'
+z=x+y
+Traceback (most recent call last):
+  File "<pyshell#36>", line 1, in <module>
+    z=x+y
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+print(y,x)
+roll no: 10
+z=y+str(x)
+z
+'roll no:10'
+
+
+a1,b1=5,6
+a1
+5
+b1
+6
+
+Ex:
+
+'userFullName - Camel Case'
+'userFullName - Camel Case'
+
+'userFullName - Pascel Case'
+'userFullName - Pascel Case'
+
+user_full_name=> Snamke Case
+SyntaxError: invalid syntax
+
+'user_full_name=> Snamke Case'
+'user_full_name=> Snamke Case'
+-----------------------------
+> To print info in single line using \n:
+
+print("hello\nhello world")
+o/p: hello
+     hello world
+
+> # Fix the code below 👇
+
+print("Day 1 - String Manipulation"))
+print('String Concatenation is done with the' "+" sign.')
+ print('e.g. print("Hello " + "world")')
+print(("New lines can be created with a backslash and n.")
+
+ans:
+
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+
+
+> print input function:
+
+print("hello "+input("what is your name "))
+
+o/p:
+hello patrik
+
+
+> multiply 2 num
+
+num1 = int(input())
+num2 = int(input())
+print(num1*num2)
+
+i/p:2,3
+
+o/p:
+6
+
+> print length:
+print(len(input()))
+
+i/p: seshu
+o/p: 4
+===============================
+n this lecture we are discussing variable in python:
+Variable: It is a container where we can put our value
+e.g 
+ x=2 #here x is variable and 2 is value
+ x+3
+ 5
+y=3
+
+Note:If I want to use output of previous operation so we use underscore (_) 
+ _+y
+8  # previous output 5 and y is 3 
+
+Use String as a variable:
+-- Strings in python are surrounded by either single quotation marks, or double quotation marks.
+-- e.g  "shiva" ,'shiva'
+
+Assign String to a Variable:
+-- Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+name='shiva'
+name
+shiva
+
+Slicing String:
+we can return a range of characters by using the slice syntax.
+Specify the start index and the end index, separated by a colon, to return a part of the string.
+
+-- Get the characters from position 2 to position 5 (not included):
+name='youtube'
+name[2:5]
+ 'utu'
+
+Slice From the Start:
+name[:5] #from starting to index 5 (exclude)
+ 'youtu'
+
+Slice To the End:
+name[2:] #from 2nd index to end
+ 'utube'
+
+Negative Indexing:
+
+0    1   2   3    4   5   6   #positive indexing
+y    o   u   t    u   b   e
+-7  -6  -5  -4   -3  -2  -1   #Negative indexing 
+
+name[-1]
+'e'
+
+ name[:-1]
+ 'youtub'
+name[:]
+ 'youtube'
+ name [:0]
+''
+name[-5:-2]
+'utu' 
+
+Concatenate String:
+ name+ ' telusko'
+ 'youtube telusko'
+------------------------------------------
+
+
+Content Copyright by Pierian Data
+Variable Assignment
+Rules for variable names
+names can not start with a number
+
+names can not contain spaces, use _ intead
+
+names can not contain any of these symbols:
+
+:'",<>/?|\!@#%^&*~-+
+it's considered best practice (PEP8) that names are lowercase with underscores
+
+avoid using Python built-in keywords like list and str
+
+avoid using the single characters l (lowercase letter el), O (uppercase letter oh) and I (uppercase letter eye) as they can be confused with 1 and 0
+
+Dynamic Typing
+Python uses dynamic typing, meaning you can reassign variables to different data types. This makes Python very flexible in assigning data types; it differs from other languages that are statically typed.
+
+my_dogs = 2
+my_dogs
+2
+my_dogs = ['Sammy', 'Frankie']
+my_dogs
+['Sammy', 'Frankie']
+Pros and Cons of Dynamic Typing
+Pros of Dynamic Typing
+very easy to work with
+faster development time
+Cons of Dynamic Typing
+may result in unexpected bugs!
+you need to be aware of type()
+Assigning Variables
+Variable assignment follows name = object, where a single equals sign = is an assignment operator
+
+a = 5
+a
+5
+Here we assigned the integer object 5 to the variable name a.
+Let's assign a to something else:
+
+a = 10
+a
+10
+You can now use a in place of the number 10:
+
+a + a
+20
+Reassigning Variables
+Python lets you reassign variables with a reference to the same object.
+
+a = a + 10
+a
+20
+There's actually a shortcut for this. Python lets you add, subtract, multiply and divide numbers with reassignment using +=, -=, *=, and /=.
+
+a += 10
+a
+30
+a *= 2
+a
+60
+Determining variable type with type()
+You can check what type of object is assigned to a variable using Python's built-in type() function. Common data types include:
+
+int (for integer)
+float
+str (for string)
+list
+tuple
+dict (for dictionary)
+set
+bool (for Boolean True/False)
+type(a)
+int
+a = (1,2)
+type(a)
+tuple
+Simple Exercise
+This shows how variables make calculations more readable and easier to follow.
+
+my_income = 100
+tax_rate = 0.1
+my_taxes = my_income * tax_rate
+my_taxes
+10.0
+Great! You should now understand the basics of variable assignment and reassignment in Python.
+Up next, we'll learn about strings!
+

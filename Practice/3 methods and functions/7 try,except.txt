@@ -1,0 +1,58 @@
+number=int(input("Enter a number : "))
+print(number)
+
+o/p:
+
+C:\Users\Shiva\PycharmProjects\pythonProject\venv\Scripts\python.exe C:\Users\Shiva\PycharmProjects\pythonProject\modules\calculator.py 
+Enter a number : a
+Traceback (most recent call last):
+  File "C:\Users\Shiva\PycharmProjects\pythonProject\modules\calculator.py", line 1, in <module>
+    number=int(input("Enter a number : "))
+ValueError: invalid literal for int() with base 10: 'a'
+
+Process finished with exit code 1
+
+so we will use try and exception
+
+try:
+    number=int(input("Enter a number : "))
+    print(number)
+except ZeroDivisionError:
+    print("Divided by Zero")
+except ValueError:
+    print("Invalid input")
+
+o/p:
+Enter a number : 2
+2
+
+Enter a number : a
+Invalid input
+
+
+----------------------------------
+try:
+    number=int(input("Enter a number : "))
+    result = 10 / number
+    print(result)
+    # print(number)
+except ZeroDivisionError:
+    print("Divided by Zero")
+except ValueError:
+    print("Invalid input")
+
+o/p:
+Enter a number : 0
+Divided by Zero
+-----------------
+try:
+    number=int(input("Enter a number : "))
+    result = 10 / number
+    print(result)
+    # print(number)
+except ZeroDivisionError as err:
+    print(err)
+
+o/p:
+Enter a number : 0
+Divided by Zero

@@ -1,0 +1,73 @@
+
+#49 Python Tutorial for Beginners | Class and Object
+11:01
+Django Tutorial for Beginners
+26 videos
+
+
+6:50 / 7:01
+
+•
+Attribute
+
+#48 Python Tutorial for Beginners | Object Oriented Programming | Introduction
+
+Telusko
+2.37M subscribers
+
+Join
+
+Subscribe
+
+8.9K
+
+
+Share
+
+Download
+
+455,128 views  14 Aug 2018
+Check out our courses:
+
+Spring and Microservices Weekend Live Batch : https://bit.ly/spring-live-weekend
+Coupon: TELUSKO10   (10% Discount)
+
+Master Java Spring Development : https://bit.ly/java-spring-cloud
+
+In this lecture we will learn:
+- What is OOPs?
+- Different programming paradigms in python
+- What is object-oriented programming?
+- What are objects?
+- What is the class in OOPs?
+
+
+#1
+- OOPs stands for Object-Oriented Programming.
+- Python supports different programming paradigms.
+It supports:
+1) Functional Programming 
+Functional programming is a programming paradigm in which we try to bind everything in a pure mathematical functions style. 
+
+2) Object Oriented Programming
+ It is a programming pattern that rounds around an object or entity is called object-oriented programming.
+
+3) Procedure Oriented Programming
+Procedure-oriented programming contains a group of instructions known as function. There are multiple functions in the program.
+
+#2
+- In the real world, everything is an object.
+e.g., to click the photo, the camera is an object.
+ to work in a company, their employees are objects.
+- Every object has two things:-
+1. Attributes (An object knows something)
+2. Behaviour (An object does something)
+- An object can also have multiple properties as well as multiple behaviours.
+- Variables are used to store data or attributes in an object.
+- Methods are used to define the behaviour of an object.
+- Methods in object-oriented programming are similar to functions.
+
+#3
+-A class is a user-defined blueprint or prototype from which objects are created.
+- In programming, a class is used to write the design of a program.
+- Class is the design and an object is an instance.

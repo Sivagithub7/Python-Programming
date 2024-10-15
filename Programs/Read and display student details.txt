@@ -1,0 +1,14 @@
+studentid=input("Enter student Id : ")
+name=input("Enter name : ")
+marks=float(input("Enter marks : "))
+print("ID:",studentid,"\nName:",name,"\nMarks:",marks)
+
+o/p:
+
+Enter student Id : 21
+Enter name : nikil
+Enter marks : 580
+
+ID: 21 
+Name: nikil 
+Marks: 580.0

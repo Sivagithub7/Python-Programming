@@ -1,0 +1,392 @@
+lst=[10,20,"welcome",-30,25.65]
+print(lst)
+print(lst[3])
+print(lst[3:5])
+print(lst*2)
+print(len(lst))
+
+o/p:
+[10, 20, 'welcome', -30, 25.65]
+-30
+[-30, 25.65]
+[10, 20, 'welcome', -30, 25.65, 10, 20, 'welcome', -30, 25.65]
+5
+---------------------
+lst=[10,20,"welcome",-30,25.65]
+
+lst.append(40)
+lst.remove("welcome")
+del(lst[1])
+print(lst)
+
+o/p:
+[10, -30, 25.65, 40]
+-----------------
+lst=[10,20,-30,25.65]
+
+print(max(lst))
+print(min(lst))
+
+lst.insert(3,99)
+print(lst)
+
+lst.sort()
+print(lst)
+
+lst.sort(reverse=True)
+print(lst)
+
+o/p:
+25.65
+-30
+[10, 20, -30, 99, 25.65]
+[-30, 10, 20, 25.65, 99]
+[99, 25.65, 20, 10, -30]
+--------------
+
+--------------
+List func:
+
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Oscar","Tim"]
+print(friends)
+
+o/p:
+['Kevin', 'Karan', 'Jin', 'Oscar', 'Tim']
+
+-------------
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Oscar","Tim"]
+friends.extend(lucky_numbers)
+print(friends)
+
+o/p:
+['Kevin', 'Karan', 'Jin', 'Oscar', 'Tim', 4, 8, 12, 15, 19, 25, 40]
+
+---------------
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Oscar","Tim"]
+friends.append("nikil")
+print(friends)
+
+o/p:
+
+['Kevin', 'Karan', 'Jin', 'Oscar', 'Tim', 'nikil']
+-------------------------
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Oscar","Tim"]
+friends.insert(1,"gana")
+print(friends)
+
+o/p:
+['Kevin', 'gana', 'Karan', 'Jin', 'Oscar', 'Tim']
+---------------------
+Pop: remove last element
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Oscar","Tim"]
+friends.pop()
+print(friends)
+
+o/p:
+['Kevin', 'Karan', 'Jin', 'Oscar']
+------------------
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Jin","Oscar","Tim"]
+# friends
+print(friends.count("Jin"))
+
+o/p:
+
+2
+----------------------
+lucky_numbers=[4,8,12,15,19,25,40]
+friends=["Kevin","Karan","Jin","Jin","Oscar","Tim"]
+friends.clear()
+print(friends)
+
+o/p:
+[]
+----------------
+lucky_numbers=[43,8,2,15,1,25,19]
+friends=["Kevin","Karan","Jin","Jin","Oscar","Tim"]
+friends.clear()
+lucky_numbers.sort()
+print(lucky_numbers)
+
+o/p:
+
+[1, 2, 8, 15, 19, 25, 43]
+-------------------
+lucky_numbers=[43,8,2,15,1,25,19]
+friends=["Kevin","Karan","Jin","Jin","Oscar","Tim"]
+friends2=friends.copy()
+# lucky_numbers.sort()
+print(friends2)
+
+o/p:
+['Kevin', 'gana', 'Karan', 'Jin', 'Oscar', 'Tim']
+---------------
+=================================
+
+
+my_list=[1,2,3]
+my_list=['STRING',100,23.2]
+len(my_list)
+
+o/p: 3
+------------------------------
+mylist=['one','two','three']
+mylist[0] ----indexing
+
+o/p: one
+
+mylist[1:]  ---slicing
+
+o/p: 'two','three'
+---------------------------------
+another_list=['four','five'] ----concatination
+ownlist=mylist+another_list
+
+ownlist
+
+o/p: ['one', 'two', 'three', 'four', 'five']
+------------------------------
+ownlist[0]='ONE IN CAPS'
+
+o/p:
+ownlist
+
+['ONE IN CAPS', 'two', 'three', 'four', 'five']
+--------------------
+append:
+ownlist.append('six')
+ownlist
+
+['ONE IN CAPS', 'two', 'three', 'four', 'five', 'six']
+-------------------------
+pop:
+ownlist.pop() --- last list deleted
+
+ownlist.pop(0)-- 0th index list deleted
+--------
+sort:
+
+new_list=['a','b','c','e','x','t']
+num_list=[4,1,8,3]
+
+new_list.sort()
+new_list
+
+['a', 'b', 'c', 'e', 't', 'x']
+
+--------------------------------------
+reverse:
+num_list.reverse()
+num_list
+
+o/p:
+[8, 4, 3, 1]
+--------------------------
+In this lecture we will learn:
+- What is a list in Python?
+- Lists are mutable
+- Creation of a list in Python
+- Methods available with the list
+- Functions performed with a list
+
+#1
+Lists are used to store multiple items in a single variable.
+- We have to use a square bracket [], and in that square bracket, we can store multiple values.
+- We can print the list through the variable name.
+- Lists are Mutable which means values can be changed in the list.
+- We can also get the single value from the list using the index value.
+- The index value is 1 less than the size of a list as the index value starts from 0.
+e.g., If the size of the list is 5, then its index value lies in the range of 0 to 4.
+- We can fetch only those values from a list that are in the range of index values of it.
+- We can also get a sub-list of a list by using the slicing in a list.
+- We can also fetch the value from a list through negative numbers similar to strings.
+- A list of strings can also be created.
+- We can also create a list that can store values of different data types.
+Like it can store integer value, float value, string value etc, in a single list.
+- A list of lists can also be created which means a list can also store different lists in it as well.
+
+#2
+- Several operations can also be performed using it and it has many in-built functions and methods to use.
+- nums. shows all the functions that are available with the list.
+- Ctrl + Space can also be used to show the methods.
+- append method is used to add a new value to the end of a list.
+- clear will clear the entire list.
+- insert method can add a value in between the list at the specified index.
+- A particular element can also be deleted through the remove method.
+- pop method will also remove the element through the index value and return that deleted element as well.
+- If you don't specify the index value in the pop method, it will delete and return the last element from the list.
+- del is a command through which you can delete a sub-list or multiple values from a list.
+ del list name[start:end]
+- extend method is used to add multiple values or a sub-list in a list.
+- sort method is used to get listed in the sorted order.
+ nums.sort()
+
+#3
+- min() function is used to get the minimum value present in a list.
+- max() function is used to get the maximum value of a list.
+- sum() function returns the sum of all of the values present inside the list.
+=============================
+
+
+Content Copyright by Pierian Data
+Lists
+Earlier when discussing strings we introduced the concept of a sequence in Python. Lists can be thought of the most general version of a sequence in Python. Unlike strings, they are mutable, meaning the elements inside a list can be changed!
+
+In this section we will learn about:
+
+1.) Creating lists
+2.) Indexing and Slicing Lists
+3.) Basic List Methods
+4.) Nesting Lists
+5.) Introduction to List Comprehensions
+Lists are constructed with brackets [] and commas separating every element in the list.
+
+Let's go ahead and see how we can construct lists!
+
+# Assign a list to an variable named my_list
+my_list = [1,2,3]
+We just created a list of integers, but lists can actually hold different object types. For example:
+
+my_list = ['A string',23,100.232,'o']
+Just like strings, the len() function will tell you how many items are in the sequence of the list.
+
+len(my_list)
+4
+Indexing and Slicing
+Indexing and slicing work just like in strings. Let's make a new list to remind ourselves of how this works:
+
+my_list = ['one','two','three',4,5]
+# Grab element at index 0
+my_list[0]
+'one'
+# Grab index 1 and everything past it
+my_list[1:]
+['two', 'three', 4, 5]
+# Grab everything UP TO index 3
+my_list[:3]
+['one', 'two', 'three']
+We can also use + to concatenate lists, just like we did for strings.
+
+my_list + ['new item']
+['one', 'two', 'three', 4, 5, 'new item']
+Note: This doesn't actually change the original list!
+
+my_list
+['one', 'two', 'three', 4, 5]
+You would have to reassign the list to make the change permanent.
+
+# Reassign
+my_list = my_list + ['add new item permanently']
+my_list
+['one', 'two', 'three', 4, 5, 'add new item permanently']
+We can also use the * for a duplication method similar to strings:
+
+# Make the list double
+my_list * 2
+['one',
+ 'two',
+ 'three',
+ 4,
+ 5,
+ 'add new item permanently',
+ 'one',
+ 'two',
+ 'three',
+ 4,
+ 5,
+ 'add new item permanently']
+# Again doubling not permanent
+my_list
+['one', 'two', 'three', 4, 5, 'add new item permanently']
+Basic List Methods
+If you are familiar with another programming language, you might start to draw parallels between arrays in another language and lists in Python. Lists in Python however, tend to be more flexible than arrays in other languages for a two good reasons: they have no fixed size (meaning we don't have to specify how big a list will be), and they have no fixed type constraint (like we've seen above).
+
+Let's go ahead and explore some more special methods for lists:
+
+# Create a new list
+list1 = [1,2,3]
+Use the append method to permanently add an item to the end of a list:
+
+# Append
+list1.append('append me!')
+# Show
+list1
+[1, 2, 3, 'append me!']
+Use pop to "pop off" an item from the list. By default pop takes off the last index, but you can also specify which index to pop off. Let's see an example:
+
+# Pop off the 0 indexed item
+list1.pop(0)
+1
+# Show
+list1
+[2, 3, 'append me!']
+# Assign the popped element, remember default popped index is -1
+popped_item = list1.pop()
+popped_item
+'append me!'
+# Show remaining list
+list1
+[2, 3]
+It should also be noted that lists indexing will return an error if there is no element at that index. For example:
+
+list1[100]
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+<ipython-input-22-af6d2015fa1f> in <module>()
+----> 1 list1[100]
+
+IndexError: list index out of range
+We can use the sort method and the reverse methods to also effect your lists:
+
+new_list = ['a','e','x','b','c']
+#Show
+new_list
+['a', 'e', 'x', 'b', 'c']
+# Use reverse to reverse order (this is permanent!)
+new_list.reverse()
+new_list
+['c', 'b', 'x', 'e', 'a']
+# Use sort to sort the list (in this case alphabetical order, but for numbers it will go ascending)
+new_list.sort()
+new_list
+['a', 'b', 'c', 'e', 'x']
+Nesting Lists
+A great feature of of Python data structures is that they support nesting. This means we can have data structures within data structures. For example: A list inside a list.
+
+Let's see how this works!
+
+# Let's make three lists
+lst_1=[1,2,3]
+lst_2=[4,5,6]
+lst_3=[7,8,9]
+
+# Make a list of lists to form a matrix
+matrix = [lst_1,lst_2,lst_3]
+# Show
+matrix
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+We can again use indexing to grab elements, but now there are two levels for the index. The items in the matrix object, and then the items inside that list!
+
+# Grab first item in matrix object
+matrix[0]
+[1, 2, 3]
+# Grab first item of the first item in the matrix object
+matrix[0][0]
+1
+List Comprehensions
+Python has an advanced feature called list comprehensions. They allow for quick construction of lists. To fully understand list comprehensions we need to understand for loops. So don't worry if you don't completely understand this section, and feel free to just skip it since we will return to this topic later.
+
+But in case you want to know now, here are a few examples!
+
+# Build a list comprehension by deconstructing a for loop within a []
+first_col = [row[0] for row in matrix]
+first_col
+[1, 4, 7]
+We used a list comprehension here to grab the first element of every row in the matrix object. We will cover this in much more detail later on!
+
+For more advanced methods and features of lists in Python, check out the Advanced Lists section later on in this course!

@@ -1,0 +1,129 @@
+Arrays:
+
+see in nodse
+
+from array import *
+
+vals=array('I',[5,9.8,12,14])
+print(vals)
+
+o/p:
+    vals=array('I',[5,9.8,12,14])
+TypeError: array item must be integer
+
+noted:because I is for integer values, so there should not float at or other values.
+
+from array import *
+
+vals=array('I',[5,8,12,14])
+print(vals)
+
+o/p:
+array('I', [5, 8, 12, 14])
+---------------------------------
+from array import *
+
+vals=array('i',[5,8,12,14])
+print(vals.buffer_info())    ---- buffer_info ls size
+
+o/p:
+(2136132963792, 4)  --- address, size
+==================
+reverse:
+from array import *
+
+vals=array('i',[5,8,12,14])
+vals.reverse()
+print(vals)
+
+o/p:
+array('i', [14, 12, 8, 5])
+--------------------
+print one by one values:
+
+from array import *
+
+vals=array('i',[5,8,12,14])
+for i in range(5):
+    print(vals[i])
+
+o/p:
+IndexError: array index out of range   -- so we can put 4 in range
+5
+8
+12
+14
+====================
+from array import *
+
+vals=array('i',[5,8,12,14])
+newArr=array(vals.typecode, (a*a for a in vals))
+i=0
+
+while i<len(newArr):
+    print(newArr[i])
+    i+=1
+
+o/p:
+25
+64
+144
+196
+========================
+user input:
+
+from array import *
+
+arr=array('i',[])
+n=int(input("Enter the length of the array: "))
+
+for i in range(n):
+    x=int(input("Enter next value: "))
+    arr.append(x)
+print(arr)
+
+o/p:
+
+Enter the length of the array: 4   --- our wish
+Enter next value: 8
+Enter next value: 9
+Enter next value: 7
+Enter next value: 5
+array('i', [8, 9, 7, 5])
+==============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

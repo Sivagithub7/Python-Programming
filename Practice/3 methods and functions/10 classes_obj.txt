@@ -1,0 +1,17 @@
+class student:
+    def __init__(self,name,major,gpa,probation):
+        self.name=name
+        self.major=major
+        self.gpa=gpa
+        self.probation=probation
+
+open another new file 
+
+from student import student
+
+Student1=student("jim","business", 3.1, False)
+print(Student1.gpa)
+
+o/p:
+3.1
+-------------------

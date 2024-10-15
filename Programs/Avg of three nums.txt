@@ -1,0 +1,8 @@
+a,b,c=[int(x) for x in input("Enter three integers: ").split()]
+average=(a+b+c)/3
+print("Avg of three numbers: ",average)
+
+o/p:
+
+Enter three integers: 10 20 30
+Avg of three numbers:  20.0
