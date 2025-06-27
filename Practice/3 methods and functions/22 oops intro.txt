@@ -71,3 +71,151 @@ e.g., to click the photo, the camera is an object.
 -A class is a user-defined blueprint or prototype from which objects are created.
 - In programming, a class is used to write the design of a program.
 - Class is the design and an object is an instance.
+
+=========================================
+OOPS:
+A language that supports all the principles of an oriented programming is known as an oops.
+
+Object Oriented Principles(OOPs):
+1) Encapsulation
+2) Abstraction
+3) Inheritance
+4) Polymorphism
+
+Object Oriented = Object Based + Inheritance + Runtime
+
+Polymorphism Object Oriented Languages:
+C++, Java, VC++, C#.Net, Visual Basic.Net, Simula, Ada, Small Talk, Python, ..etc.,
+
+Object Based Languages:
+Java Script, VB Script, Visual Basic, .. etc.,
+
+In order to use the above principles in a Java programming we need the following
+language constructs:
+1) Class
+2) Object
+
+1)Class: A class is a collection of variables & methods.
+A class is a user-defined blueprint or prototype from which objects are created.
+What do we mean by a prototype?
+Prototype - Wikipedia
+A prototype is an early sample, model, or release of a product built to test a concept or process.
+
+
+Objects:Object is an instance of a class.
+What are objects in Python?
+Objects are variables that contain data and functions that can be used to manipulate the data. 
+
+Methods:Methods in objects are functions that belong to the object.
+Method is called by its name, but it is associated to an object (dependent).
+A method definition always includes ‘self’ as its first parameter
+
+Functions:Function is block of code that is also called by its name. (independent)
+The function can have different parameters or may not have any at all. If any data (parameters) are passed, they are passed explicitly.
+
+ex:
+class VivoMobiles:
+    x=99
+    def samplemethod(self):
+        print(self.x)
+obj1=VivoMobiles()                               
+obj1.samplemethod()
+
+VivoMobiles.samplemethod(obj1)
+
+note: here 7 th and 8 th lines same result
+o/p:
+99
+99
+
+ex:
+
+class VivoMobiles:
+    def __init__(self):
+        print("enter any:")
+    def example(self):
+        print("example is:")
+
+obj1=VivoMobiles()
+
+o/p:
+enter any:
+
+ex:
+
+class Vivomobiles:
+    def __init__(self):
+        self.model='model'
+        self.ram='ram'
+        self.rom='rom'
+
+    def info(self):
+        print('vivo',self.model,'info:')
+        print('model -',self.model)
+        print('ram -', self.ram)
+        print('rom -', self.rom)
+
+mobile1=Vivomobiles()
+mobile1.model='v20'
+mobile1.ram='8gb'
+mobile1.rom='126gb'
+mobile1.info()
+print('')
+mobile2=Vivomobiles()
+mobile2.model='x19'
+mobile2.ram='12gb'
+mobile2.rom='84gb'
+mobile2.info()
+
+o/p:
+vivo v20 info:
+model - v20
+ram - 8gb
+rom - 126gb
+
+vivo x19 info:
+model - x19
+ram - 12gb
+rom - 84gb
+
+==============================================================
+Variables:
+A variable is a container that contains data.
+There are 2 types of variables in Java:
+1) Instance Variables
+2) Class Variables
+
+1) Instance Variables:A variable that is defined as a member of a class is known as an instance
+variable.
+
+2) Class Variables:A variable that is defined as a static member of a class is known as class variable.
+
+Class variables are defined within a class but outside any of the class's methods.
+ex:
+
+class Bike:
+    #class or static variables
+    tyres=2
+    def __init__(self):
+        #instance variables
+        self.name='bike name  '
+        self.year=('2020')
+        self.mileage='40kmph'
+
+bike1=Bike()
+bike1.name='activa '
+bike2=Bike()
+bike2.name='unicorn'
+bike2.year='2022'
+bike2.mileage='80kmph'
+
+print(bike1.name  ,bike1.year,bike1.mileage,Bike.tyres)
+
+print(bike2.name,bike2.year,bike2.mileage,Bike.tyres)
+
+0/p:
+activa  2020 40kmph 2
+unicorn 2022 80kmph 2
+
+note:
+ we cant change class variable it should be applicable to all 
