@@ -301,3 +301,188 @@ A word of caution however! It is possible to create an infinitely running loop w
 while True:
     print("I'm stuck in an infinite loop!")
 A quick note: If you did run the above cell, click on the Kernel menu above to restart the kernel!
+=========================================
+
+while:A while loop is a control flow statement which allows code to be executed repeatedly, depending on whether a condition is satisfied or not.
+
+ex:
+c=1
+while c<6:
+    print(c ,"hello")
+    c+=1
+
+o/p:
+1 hello
+2 hello
+3 hello
+4 hello
+5 hello
+
+ex:
+
+c=1
+while c<6:
+    print(c ,"hello")
+    if c==3:
+        print("now is 3")
+        
+    c+=1
+o/p:
+1 hello
+2 hello
+3 hello
+now is 3
+4 hello
+5 hello
+
+
+ex:break
+
+c=1
+while c<6:
+    print(c ,"hello")
+    if c==3:
+        print("now is 3")
+        break
+    c+=1
+o/p:
+
+ex:continue
+
+c=0
+while c<6:
+    c += 1
+    if c == 3:
+        print("now is 3")
+        continue
+    print(c ,"hello")
+
+o/p:
+1 hello
+2 hello
+now is 3
+4 hello
+5 hello
+6 hello
+
+-------------------------------------------
+For:A for loop in Python is a control flow statement that is used to repeatedly execute a group of statements as long as the condition is satisfied.
+
+ex:
+for x in range(1, 6):
+    print(x)
+
+o/p:
+1
+2
+3
+4
+5
+
+ex:
+
+for x in range(1, 30, 5):
+    print(x)
+	
+o/p:
+1
+6
+11
+16
+21
+26
+
+ex:
+persons = ('ram','raj','sam','vinay')
+for user in persons:
+    print(user)
+	
+o/p:
+ram
+raj
+sam
+vinay
+
+ex: we also used sets (unordered)
+
+persons = {'ram','raj','sam','vinay'}
+for user in persons:
+    print(user)
+	
+o/p:
+ram
+sam
+raj
+vinay
+
+o/p:
+sam
+raj
+ram
+vinay
+
+ex:
+
+name=('rafi')
+for i in name:
+    print(i)
+	
+o/p:
+r
+a
+f
+i
+
+ex:
+
+name=('rafi','sam','raj','vinay','ravi')
+for i in name:
+    print(i)
+    if i=='raj':
+        break
+o/p:
+rafi
+sam
+raj
+
+ex:
+name=('rafi','sam','raj','vinay','ravi')
+for i in name:
+    
+    if i=='raj':
+        break
+    print(i)
+	
+o/p:
+sam
+raj
+
+ex: using else
+name=('rafi','sam','raj','vinay','ravi')
+for i in name:
+    print(i)
+else:
+    print("hai")
+	
+o/p:
+afi
+sam
+raj
+vinay
+ravi
+hai
+
+ex:
+
+name=('rafi','sam','raj','vinay','ravi')
+for i in name:
+    print(i)
+    if i=="raj":
+        break
+else:
+    print("hai")
+
+o/p:
+rafi
+sam
+raj
