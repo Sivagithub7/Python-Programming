@@ -623,3 +623,83 @@ print(numSum,z)
 
 o/p:
 294 99
+========================
+
+
+function: it is block of code or statement. which performs specific task when it is called.
+
+def raju(a):
+
+#a is parameter
+
+print("Hi",a)
+
+raju (5,4,9)
+
+o/p:
+
+raju (5,4,9)
+
+TypeError: raju() takes 1 positional argument but 3 were given
+
+def raju(*a):
+
+print("Hi",a)
+
+raju (5,4,9)
+
+o/p:
+
+Hi (5, 4, 9) is in tuple format
+
+def raju(a):
+
+#arbitory argument
+
+print("Hi",a)
+
+raju(a=5,b=4)
+
+o/p:
+
+raju(a=5,b=4)
+
+TypeError: raju() got an unexpected keyword argument 'a
+
+def raju(**a): #key word argument
+
+print("Hi",a)
+
+raju(a=5,b=4)
+
+o/p:
+
+Hi {'a': 5, 'b': 4}
+
+#dict format
+
+first.py file
+
+def add(a,b):
+
+print(a+b)
+
+def sub(a,b):
+
+print(a-b)
+
+support.py file
+
+import first
+
+first.add(3,2)
+
+first.sub(3,2)
+
+o/p:
+
+5
+
+1
+
+
