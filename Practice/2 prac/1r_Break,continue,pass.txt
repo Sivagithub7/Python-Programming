@@ -82,3 +82,56 @@ o/p:
 10
 
 note : except 3 divisible
+
+
+Pass:
+
+ignore
+
+if True:
+
+o/p: error
+
+if True:
+
+pass
+
+o/p: empty
+
+break: terminate the loop
+
+for i in "saitej":
+
+if i=='t':
+
+break
+
+print(i)
+
+0/P:
+
+S
+
+a
+
+i
+
+I
+
+==
+
+continue: skip the current iteration
+
+for i in "saitej":
+
+if i=='t':
+
+continue
+
+print(i)
+o/p:
+s
+a
+i
+e
+j
