@@ -59,3 +59,32 @@ i5, 16gb
 i5, 16gb
 i5, 16gb
 -----------------------------
+class:
+
+template
+
+blueprint for creating object
+
+objects:
+
+physical entity
+
+create any no. of obj for class
+
+memory is allocated when obj is created
+
+obj is instance of class
+
+using obj we cane access methods and variables of a class
+
+class Student():
+
+name="raju"
+
+age=0
+
+s1=Student()
+
+print(s1.name,s1.age)
+
+o/p: raju e
