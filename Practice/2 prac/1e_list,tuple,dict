@@ -139,3 +139,125 @@ if we dont know mobile is there are not so we can check like this
 if 'mobile' in person: print('yes')
 
 yes
+
+
+key=immutable
+
+value mutable any type no slicing
+
+key will act as index
+
+keys are unique
+
+a= {2:'xy', 25:'mad', 'max':5,'max':3} print(a)
+
+o/p:
+
+{2: 'xy', 25: 'mad', 'max': 33 ==
+
+accessing:
+
+a= {2:'xy', 25:'mad', 'max':5} print(a[25])
+
+o/p:
+
+mad
+
+get: need to give key then we will get value
+
+a= {2: 'xy', 25:'mad', 'max':5} print(a.get(25))
+
+o/p:
+
+mad
+
+values: if we want all the values in that dict
+a= {2:'xy', 25:'mad', 'max':5}
+
+print(a.values())
+
+o/p:
+
+dict_values(['xy', 'mad', 5])
+
+keys: if we req all keys
+
+a= {2:'xy', 25:'mad','max':5}
+
+print(a.keys())
+
+o/p:
+
+I
+
+dict_keys([2, 25, 'max'])
+
+items:
+
+a= {2:'xy', 25:'mad','max':5}
+
+print(a.items())
+
+o/p:
+
+dict_items([(2, 'xy'), (25, 'mad'), ('max', 5)])
+
+update:
+
+a= {2:'xy', 25:'mad', 'max':5}
+
+a.update({48:6})
+
+print(a)
+
+o/p:
+
+{2: 'xy', 25: 'mad', 'max': 5,48:6}
+for:
+
+for i in {2: 'xy', 25:'mad', 'max':5}:
+
+print(i)
+
+o/p:
+
+2
+
+25
+
+max
+
+for i in {2:'xy', 25:'mad' 'max':5}.values():
+
+print(i)
+
+o/p:
+
+xy
+
+mad
+
+5
+
+for i in {2:'xy', 25:'mad', 'max':5}.items():
+
+print(i)
+
+o/p:
+
+(2, 'xy')
+
+(25, 'mad')
+
+('max', 5)
+
+for i,j in {2:'xy',25:'mad', 'max':5}.items():
+
+print(i,j)
+o/p:
+
+2 xy
+
+25 mad
+
+max 5
