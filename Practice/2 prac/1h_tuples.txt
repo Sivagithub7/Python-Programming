@@ -119,3 +119,68 @@ You may be wondering, "Why bother using tuples when they have fewer available me
 You should now be able to create and use tuples in your programming as well as have an understanding of their immutability.
 
 Up next Files!
+
+
+
+In tuple there is no methods like list.
+
+a=(4,2,3.5, "var", True, "char", 2) print(a[-2])
+
+o/p: char
+
+concatination
+
+a=(4,2,9) b=(5,3,7)
+
+print(a+b)
+
+o/p:
+
+(4, 2, 9, 5, 3, 7)
+
+a=(4,2,9) b=(5,3,7)
+
+print(a*2)
+
+o/p:
+
+(4, 2, 9, 4, 2, 9)
+
+Iteration:
+
+a=(4,2,9)
+
+for i in a:
+print(i)
+
+o/p:
+
+4
+
+2
+
+9
+
+Membership in and not in
+
+in:
+
+a=(4,2,9)
+
+print(4 in a)
+
+o/p:
+
+True
+
+not in:
+
+a=(4,2,9)
+
+print(4 not in a)
+
+o/p:
+
+False
+
+==
