@@ -722,3 +722,168 @@ For more info on formatted string literals visit https://docs.python.org/3/refer
 That is the basics of string formatting!
 
 ------------------------------------------
+a='python'
+
+b="python"
+
+c='''python's class''
+
+print(a,b,c)
+
+I
+
+o/p:
+
+python python python's class
+
+Lower and upper methods:
+
+a="I am a Bad Boy"
+
+print(a.lower())
+
+a="i am a bad boy"
+
+print(a.upper())
+
+o/p:
+
+i am a bad boy
+
+I AM A BAD BOY
+
+==
+
+startswith and endswith:
+
+a="Mahesh babu"
+
+print(a.endswith("babu"))
+
+a="Mahesh babu"
+
+print(a.startswith("babu"))
+
+o/p:
+
+True
+
+False
+
+I
+
+a="Mahesh babu"
+
+print(a.endswith("b"))
+
+b="Mahesh babu"
+
+print(b.startswith("MAHESH"))
+
+o/p:
+
+False
+
+False
+
+index:
+
+b="Mahesh Babu"
+
+print(b.index("abu"))
+
+o/p:
+
+8
+
+b="Mahesh Babu"
+
+print(b.index("kalyan"))
+
+o/p: error
+
+(in index it shows error and in find it shows -1)
+
+
+Find:
+
+b="Mahesh Babu" print(b.find("kalyan"))
+
+I
+
+o/p: -1
+
+b="Mahesh Babu" print(b.find("B"))
+
+o/p: 7
+
+COUNT:
+
+b="Mahesh Babu" print(b.count("B"))
+
+o/p: 1
+
+removeprefix:
+
+a="Mahesh Babu"
+
+print(a.removeprefix("Mahesh"))
+
+b="Mahesh Babu"
+
+print(b.removeprefix("Babu"))
+
+o/p:
+
+Babu
+Mahesh Babu
+
+removesuffix:
+
+I
+
+a="Mahesh Babu"
+
+print(a.removesuffix("Mahesh"))
+
+b="Mahesh Babu" print(b.removesuffix("Babu"))
+
+o/p:
+
+Mahesh Babu
+
+Mahesh
+
+split: converts string to list
+
+b="Mahesh Babu"
+
+print(b.split())
+
+o/p:
+
+['Mahesh', 'Babu']
+
+len:
+
+b="Mahesh Babu"
+
+print(len(b))
+
+o/p: 11
+
+strip: remove spaces
+
+b="
+
+Mahesh Babu
+
+print(b.strip())
+
+o/p:
+
+Mahesh Babu
+
+Istrip and rstrip can remove left and right spaces
+
+===
