@@ -2,6 +2,169 @@ mylist=[1,,2,2,2,2,3,3,3]
 mylist
 {1,2,3}---it removes unique values
 ===================
+
+{}
+
+not allow duplicates
+
+no index, unordered
+
+mutable
+
+methods:
+
+add()
+
+update()
+
+pop()
+
+remove()
+
+Operations:
+
+Union()
+
+Intersection()
+
+difference()
+
+is subset()
+
+is superset()
+
+add()
+
+a= {5,8,4,15,23}
+
+a.add(0)
+
+print(a)
+
+o/p:
+
+10, 4, 5, 23, 8, 15}
+
+update()
+
+a= (5,8,4,15,23)
+
+6a_dictionary
+
+5a_tuple
+
+a.update((35,45,55,3.7))
+
+print(a)
+
+o/p:
+
+(35, 4, 5, 3.7, 8, 45, 15, 55, 23)
+
+pop() here it will delete random num
+
+a= {5,8,4,15,23}
+
+a.pop()
+
+print(a)
+
+o/p: 5, 23, 8, 15)
+
+remove() here we can give element that needs to be deleted
+
+a= 5,8,4,15,23)
+
+a.remove(5)
+
+print(a)
+
+o/p: 14, 23, 8, 15}
+
+Operations:
+
+union() no duplicates and add all elements
+
+set1-{1,2,3,4,5} set2={4,5,6,7,8)
+print(set1.union(set2))
+
+o/p: 1, 2, 3, 4, 5, 6, 7, 8}
+
+intersection() -- only similar
+
+set1={1,2,3,4,5} set2={4,5,6,7,8) print(set1.intersection (set2))
+
+o/p:
+
+{4, 5}
+
+=
+
+difference() shows only diff, no duplicates
+
+set1={1,2,3,4,5} set2={4,5,6,7,8}
+
+print(set1.difference (set2))
+
+o/p:
+
+{1, 2, 3}
+
+set1={1,2,3,4,5)
+
+set2=14,5,6,7,8)
+
+print(set2.difference (set1))
+
+o/p:
+{8, 6, 7}
+
+issubset:
+
+set1={1,2,3,4,5}
+
+set2={3,4}
+
+print(set2.issubset(set1))
+
+o/p:
+
+True
+
+set1={1,2,3,4,5}
+
+set2={3,4,9}
+
+print(set2.issubset(set1))
+
+o/p:
+
+False
+
+issuperset:
+
+set1={1,2,3,4,5}
+
+set2={3,4}
+
+print(set2.issuperset(set1))
+
+o/p:
+
+False
+-----------
+
+Frozen set: mutable data type to immutable
+
+f=(1,2,3,4,5)
+
+f.add(6)
+
+print(f)
+
+o/p: false
+
+====================
 set={10,20,30,20,'xy'}
 print(set)
 
