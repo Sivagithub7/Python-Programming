@@ -390,3 +390,113 @@ first_col
 We used a list comprehension here to grab the first element of every row in the matrix object. We will cover this in much more detail later on!
 
 For more advanced methods and features of lists in Python, check out the Advanced Lists section later on in this course!
+
+
+
+a=[4,2,3.5, "var", True, "char"] print(a)
+
+b=[4,2,3.5, "var", True, "char"] print(b[2])
+
+c=[4,2,3.5, "var", True, "char"] print(c[-2])
+
+o/p: [4, 2, 3.5, 'var', True, 'char']
+
+3.5
+
+True
+
+Slicing:
+
+a=[4,2,3.5, "var", True, "char"] print(a[0:5])
+
+b=[4,2,3.5, "var", True, "char"] print(b[0:5:2])
+
+o/p: [4, 2, 3.5, 'var', True] [4, 3.5, True]
+
+#append: single element adding
+
+a=[4,2,3.5,"var", True, "char"]
+
+a.append("kim")
+
+print(a)
+
+o/p:
+
+[4, 2, 3.5, 'var', True, 'char', 'kim']
+
+extend: adding multiple elements
+
+a=[4,2,3.5, "var", True, "char"] a.extend(["kim","vim",1.0])
+
+print(a)
+
+o/p:
+
+[4, 2, 3.5, 'var', True, 'char', 'kim', 'vim', 1.0]
+
+count: count how many times
+
+a=[4,2,3.5, "var", True, "char", 2]
+
+print(a.count(2))
+
+o/p:
+
+2
+
+remove: removing element in the list and need to give element name only.
+
+a=[4,2,3.5, "var", True, "char", 2]
+
+a.remove("char")
+a.remove("char")
+
+print(a)
+
+o/p:
+
+[4, 2, 3.5, 'var', True, 2]
+
+a=[4,2,3.5,"var", True, "char",2]
+
+a.remove(2)
+
+print(a)
+
+o/p:
+
+[4, 3.5, 'var', True, 'char', 2]
+
+pop: remove th element but need to give index number
+
+a=[4,2,3.5, "var", True, "char", 2]
+
+a.pop(3)
+
+print(a)
+
+o/p:
+
+[4, 2, 3.5, True, 'char', 2]
+
+Index: to find the index num
+
+a=([4,2,3.5, "var", True, "char", 2])
+
+print(a.index(2))
+
+o/p:
+1
+
+===
+
+Insert: add element where we want.
+
+a=([4,2,3.5, "var", True, "char", 2]) a.insert(3, "mul")
+
+print(a)
+
+o/p:
+
+[4, 2, 3.5, 'mul', 'var', True, 'char', 2]
