@@ -1,0 +1,158 @@
+Inheritence:
+
+allows us to define a class thet inherits all the methods and properties from another class
+
+parent class=base class child class derived class
+
+four types:
+
+single inheritance:
+
+one parent and one child
+
+class Parent():
+
+def display(self):
+
+print("Parent c")
+
+class Child(Parent):
+
+def displayc(self):
+
+print("Child c")
+
+c=Child()
+
+c.displayc()
+
+c.display()
+
+o/p:
+
+Child c
+
+Parent c
+
+multilevel inheritance:
+
+grand parent-->parent-->child
+
+class Grand():
+def displayg(self):
+
+print("Grand")
+
+class Parent(Grand):
+
+def displayp(self):
+
+print("Parent")
+
+class Child(Parent):
+
+def displayc(self):
+
+print("Child")
+
+c=Child()
+
+c.displayc()
+
+c.displayp()
+
+c.displayg()
+
+o/p:
+
+Child
+
+Parent
+
+Grand
+
+Multiple inheritance:
+
+two or more base or parent class, one child class
+
+father
+
+mother
+
+child
+
+class Father():
+
+def displayg(self):
+
+print("Grand")
+class Mother():
+
+def displayp(self):
+
+print("Parent")
+
+class Child(Father, Mother):
+
+def displayc(self):
+
+print("Child")
+
+c=Child()
+
+c.displayc()
+
+c.displayp()
+
+c.displayg()
+
+o/p:
+
+Child
+
+Parent
+
+Grand
+
+hierarchical inheritance:
+
+one parent and multiple child classes
+
+class Father():
+
+def displayg(self):
+
+print("Grand")
+
+class Child1(Father):
+
+def displayp(self):
+
+print("Parent")
+
+class Child2(Father):
+def displayc(self):
+
+print("Child")
+
+c1=Child1()
+
+c2=Child2()
+
+c1.displayp()
+
+c1.displayg()
+
+c2.displayg()
+
+c2.displayc()
+
+o/p:
+
+Parent
+
+Grand
+
+Grand
+
+Child
