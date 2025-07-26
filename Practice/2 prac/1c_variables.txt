@@ -199,8 +199,16 @@ Concatenate String:
  name+ ' telusko'
  'youtube telusko'
 ------------------------------------------
+==> variable can store value in container as well as memory location
 
+==> for memory location
 
+a=10
+
+print(id(a))
+
+o/p: 140706352997576
+_--------------------------------
 Content Copyright by Pierian Data
 Variable Assignment
 Rules for variable names
